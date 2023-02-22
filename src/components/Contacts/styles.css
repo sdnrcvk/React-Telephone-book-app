@@ -1,0 +1,47 @@
+#container{
+    width: 400px;
+    background-color: rgb(255, 205, 120);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+input{
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.list{
+    margin: 15px 0;
+}
+
+.list > li{
+    background-color: rgb(107, 165, 179);
+    padding: 5px;
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.btn{
+    display: flex;
+    justify-content: right;
+}
+
+.btn > button{
+    padding: 5px;
+    width:60px ;
+    border-radius: 5px;
+    background-color: rgb(193, 102, 102);
+}

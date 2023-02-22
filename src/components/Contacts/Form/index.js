@@ -29,7 +29,7 @@ function Form({addContact,contacts}) {
         <div>
             <input type="text" name='phone_number' placeholder='Telefon Numarası' value={form.phone_number} onChange={onChangeInput}/>
         </div>
-        <div>
+        <div className='btn'>
             <button>Ekle</button>
         </div>
     </form>

@@ -13,12 +13,18 @@ function List({contacts}) {
 
   return (
     <div>
-        <input type="text" placeholder='Kişi Ara' value={filterText} onChange={(e)=>setFilterText(e.target.value)}/>
-        <ul>
+        <input type="text" placeholder='Ara' value={filterText} onChange={(e)=>setFilterText(e.target.value)}/>
+        <ul className='list'>
         {filtered.map((contact,i)=>(
-            <li key={i}>{contact.fullname}-{contact.phone_number}</li>
+            <li key={i}>
+                <span>{contact.fullname}</span>
+                <span>{contact.phone_number}</span>
+            </li>
         ))}
         </ul>
+        <p>
+            Kişiler ({filtered.length})
+        </p>
     </div>
   )
 }
